@@ -1,0 +1,7 @@
+{
+  "DEBUG": false,
+  "sendfilemsgEnabled": true,
+  "mentionFormat": true,
+  "defaultDelaySec": 10,
+  "defaultMessageFile": "welcome.txt"
+}
