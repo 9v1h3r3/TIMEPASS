@@ -1,16 +1,17 @@
 {
   "name": "jerry-bot",
   "version": "1.0.0",
-  "description": "Facebook bot with Web Panel",
+  "description": "Facebook Messenger bot using priyanshu-fca",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "postinstall": "npm install"
+    "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "body-parser": "^1.20.2",
-    "chokidar": "^3.5.3"
+    "priyanshu-fca": "3.0.1",
+    "express": "4.18.2",
+    "body-parser": "1.20.2",
+    "chokidar": "3.5.3"
   },
-  
+  "author": "YourName",
+  "license": "MIT"
 }
