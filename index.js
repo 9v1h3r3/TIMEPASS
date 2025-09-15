@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const chokidar = require('chokidar');
 const login = require('priyanshu-fca');
+const express = require('express');
 
 const APPSTATE_FILE = './appstate.json';
 const PREFIX_FILE = './prefix.txt';
@@ -96,3 +97,15 @@ function runBot() {
 }
 
 runBot();
+
+// === Express Keep-Alive Server (for Render) ===
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.get('/', (req, res) => {
+  res.send('✅ Jerry Bot is live on Render!');
+});
+
+app.listen(PORT, () => {
+  console.log(`🌐 Keep-alive server running on port ${PORT}`);
+});
